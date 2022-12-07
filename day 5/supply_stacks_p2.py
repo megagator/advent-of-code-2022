@@ -36,7 +36,6 @@ for line in content:
             moves.append([amount, source, destination])
 
 for move in moves:
-    print(crates)
     amount, source, destination = move
     lifted = [crates[source].pop() for _ in range(amount)]
     lifted.reverse()
